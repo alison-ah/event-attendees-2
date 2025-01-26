@@ -36,26 +36,56 @@
         
         <div class="content">
             <div class="filter">
-                <h2>Filter Attendees</h2>
+                
+                <form>
+                    <h2>Filter Attendees</h2>
+                    <label for="by-name"><h3>By Name</h3></label><br>
+                    <input type="text" id="by-name" name="by-name">
+                    <i class="fa-solid fa-magnifying-glass"></i><br>
+                    <hr>
+                    <h3>School</h3>
+                    <div class="checkboxes">
+                        <div class="option">
+                            <input type="checkbox" id="college" name="college" value="College">
+                            <label for="college">College</label><br>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="law" name="law" value="Law">
+                            <label for="law">Law</label><br>
+                        </div>
+                    </div>
+                    <hr>
+                    <h3>Registration Status</h3>
+                    <div class="checkboxes">
+                        <div class="option">
+                            <input type="checkbox" id="registered" name="registered" value="Registered">
+                            <label for="registered">Registered</label><br>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" id="not-registered" name="not-registered" value="Not Registered">
+                            <label for="not-registered">Not Registered</label><br>
+                        </div>
+                    </div>
+                </form>
                 
 
             </div>
 
             <div class="attendees">
                 <div class="attendee">
-                    <h3>College'92</h3>
-                    <h4>Jane Doe</h4>
-                    <h5>Registered</h5>
+                    <h4>College'92</h4>
+                    <h2>Jane Doe</h2>
+                    <h3>Registered</h3>
                 </div>
                 <div class="attendee">
-                    <h3>Law'86</h3>
-                    <h4>Sarah Mattson</h4>
-                    <h5>Not Registered</h5>
+                    <h4>Law'86</h4>
+                    <h2>Sarah Mattson</h2>
+                    <h3>Not Registered</h3>
                 </div>
                 <div class="attendee">
-                    <h3>College'72, Law'76</h3>
-                    <h4>Payton Ali</h4>
-                    <h5>Registered</h5>
+                    <h4>College'72, Law'76</h4>
+                    <h2>Payton Ali</h2>
+                    <h3>Registered</h3>
                 </div>
 
             </div>

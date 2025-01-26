@@ -98,11 +98,24 @@
 
     h2 {
         color: var(--primary-color);
-        text-align: center;
-        padding: 10px;
+        margin: 0;
         font-size: 2em;
         font-family: var(--regular-and-italic-font);
         font-weight: 10;
+    }
+
+    h3 {
+        color: var(--primary-color);
+        font-family: var(--medium-and-book-font);
+        font-size: 1em;
+        font-weight: medium;
+    }
+
+    h4 {
+        color: var(--secondary-color);
+        font-family: var(--medium-and-book-font);
+        font-size: 1em;
+        font-weight: lighter;
     }
 
     .top-bar {
@@ -136,50 +149,36 @@
         padding-bottom: 25px;
     }
 
-    .content {
-        display: flex;
-    }
-
     .filter {
-        width: 30%;
+        width: 100%;
     }
 
     .attendees {
         display: flex;
         flex-wrap: wrap;
-        width: 70%;
-        padding: 20px;
+        justify-content: center;
+        width: 100%;
+        padding: 80px 0px;
     }
 
     .attendee {
         border: var(--secondary-color) solid 2px;
-        width: 40%;
+        width: 80%;
         padding: 10px 15px;
         margin: 15px;
     }
 
-    h3 {
-        color: var(--secondary-color);
-        font-family: var(--medium-and-book-font);
-        font-size: 1em;
-        font-weight: lighter;
-        margin: 10px 0;
+    form {
+        padding: 20px;
     }
 
-    h4 {
-        color: var(--primary-color);
-        font-family: var(--regular-and-italic-font);
-        font-size: 1.75em;
-        font-style: italic;
-        margin: 0;
+    .checkboxes {
+        display: flex;
+        padding-bottom: 20px;
     }
 
-    h5 {
-        color: var(--primary-color);
-        font-family: var(--medium-and-book-font);
-        font-size: 1em;
-        font-weight: medium;
-        margin: 10px 0;
+    .option {
+        width: 50%;
     }
    
   
@@ -240,6 +239,24 @@
     }
   
   @media only screen and (min-width: 768px) {
+
+    .content {
+        display: flex;
+    }
+
+    .filter {
+        width: 30%;
+    }
+
+    .attendees {
+        width: 70%;
+        justify-content:flex-start;
+        padding: 80px 20px;
+    }
+    
+    .attendee {
+        width: 40%;
+    }
 
     .links ul {
         width: 50%;
