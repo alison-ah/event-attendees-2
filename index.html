@@ -39,31 +39,33 @@
                 
                 <form>
                     <h2>Filter Attendees</h2>
-                    <label for="by-name"><h3>By Name</h3></label><br>
-                    <input type="text" id="by-name" name="by-name">
-                    <i class="fa-solid fa-magnifying-glass"></i><br>
+                    <div class="search-by-name">
+                        <label for="by-name"><h3>By Name</h3></label><br>
+                        <input type="text" id="by-name" name="by-name">
+                        <i class="fa-solid fa-magnifying-glass"></i><br>
+                    </div>
                     <hr>
                     <h3>School</h3>
                     <div class="checkboxes">
                         <div class="option">
-                            <input type="checkbox" id="college" name="college" value="College">
-                            <label for="college">College</label><br>
+                            <input type="checkbox" id="college" name="college" value="College" class="checkbox">
+                            <label for="college" class="checkbox-label">College</label><br>
                         </div>
                         <div class="option">
-                            <input type="checkbox" id="law" name="law" value="Law">
-                            <label for="law">Law</label><br>
+                            <input type="checkbox" id="law" name="law" value="Law" class="checkbox">
+                            <label for="law" class="checkbox-label">Law</label><br>
                         </div>
                     </div>
                     <hr>
                     <h3>Registration Status</h3>
                     <div class="checkboxes">
                         <div class="option">
-                            <input type="checkbox" id="registered" name="registered" value="Registered">
-                            <label for="registered">Registered</label><br>
+                            <input type="checkbox" id="registered" name="registered" value="Registered" class="checkbox">
+                            <label for="registered" class="checkbox-label">Registered</label><br>
                         </div>
                         <div class="option">
-                            <input type="checkbox" id="not-registered" name="not-registered" value="Not Registered">
-                            <label for="not-registered">Not Registered</label><br>
+                            <input type="checkbox" id="not-registered" name="not-registered" value="Not Registered" class="checkbox">
+                            <label for="not-registered" class="checkbox-label">Not Registered</label><br>
                         </div>
                     </div>
                 </form>

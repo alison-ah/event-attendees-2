@@ -101,14 +101,14 @@
         margin: 0;
         font-size: 2em;
         font-family: var(--regular-and-italic-font);
-        font-weight: 10;
+        font-weight: 100;
     }
 
     h3 {
         color: var(--primary-color);
         font-family: var(--medium-and-book-font);
         font-size: 1em;
-        font-weight: medium;
+        font-weight: 550;
     }
 
     h4 {
@@ -116,6 +116,7 @@
         font-family: var(--medium-and-book-font);
         font-size: 1em;
         font-weight: lighter;
+        margin: 10px 0;
     }
 
     .top-bar {
@@ -149,36 +150,76 @@
         padding-bottom: 25px;
     }
 
+    .attendees {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 110px 0px;
+    }
+
+    .attendee {
+        border: var(--secondary-color) solid 1px;
+        width: 80%;
+        padding: 10px 20px;
+        margin: 15px;
+        border-radius: 0%;
+    }
+
+    .attendee h3 {
+        margin-top: 10px;
+    }
+
     .filter {
         width: 100%;
     }
 
-    .attendees {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-        padding: 80px 0px;
-    }
-
-    .attendee {
-        border: var(--secondary-color) solid 2px;
-        width: 80%;
-        padding: 10px 15px;
-        margin: 15px;
-    }
-
     form {
         padding: 20px;
+        width: 330px;
+    }
+
+    #by-name {
+        width: 330px;
+        height: 75px;
+        border-radius: 0%;
+        border-width: thin;
+    	border-color: lightgray;
+    }
+
+    .search-by-name h3 {
+        margin-bottom: -20px;
+    }
+
+    .search-by-name i {
+        display: none;
     }
 
     .checkboxes {
         display: flex;
+        padding-top: 5px;
         padding-bottom: 20px;
+        border-radius: 0%;
+        border-width: thin;
+    	border-color: lightgray;
+    }
+
+    .checkbox-label {
+        color: var(--secondary-color);
+        font-family: var(--medium-and-book-font);
+        font-size: 1em;
+        font-weight: lighter;
+        padding-left: 15px;
+    }
+
+    .checkbox {
+        height: 20px;
+        width: 20px;
     }
 
     .option {
+        display: flex;
         width: 50%;
+        align-items: center;
     }
    
   
@@ -238,22 +279,29 @@
         scroll-behavior: smooth;  
     }
   
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1150px) {
 
     .content {
         display: flex;
     }
 
     .filter {
-        width: 30%;
+        width: 35%;
+        padding: 20px;
     }
 
-    .attendees {
-        width: 70%;
-        justify-content:flex-start;
-        padding: 80px 20px;
+    .search-by-name i {
+        display: inline;
+        position: absolute;
+        top: 430px;
+        left: 330px;
+        color: var(--secondary-color);
     }
     
+    .attendees {
+        width: 65%;
+    }
+
     .attendee {
         width: 40%;
     }
@@ -265,12 +313,7 @@
     }
   
   }
-  
-  @media only screen and (min-width: 1522px) {
     
-  
-  }
-  
   @media print,
     (-webkit-min-device-pixel-ratio: 1.25),
     (min-resolution: 1.25dppx),
