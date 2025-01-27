@@ -4,7 +4,7 @@ let allAttendees = [];
 
 //async function fetchAndDisplayAttendees() {
 //  try {
-//    const response = await fetch("https://gist.githubusercontent.com/alison-ah/24c1706e6b1f896a971580608b312b2e/raw/6f5c06767dc9299a64829b1821d5ac87e177b1c2/sample_data.json");
+//    const response = await fetch("https://gist.githubusercontent.com/alison-ah/24c1706e6b1f896a971580608b312b2e/raw/f4e9e325aecc94f59c421264a8209145f6e68ed9/sample_data.json");
 //    allAttendees = await response.json();
 //    filterAndDisplayAttendees();
 //  } catch (error) {

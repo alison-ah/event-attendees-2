@@ -189,6 +189,7 @@
   .attendee {
     border: var(--secondary-color) solid 1px;
     width: 80%;
+    height: 132px;
     padding: 10px 20px;
     margin: 15px;
     border-radius: 0%;
